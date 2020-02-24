@@ -35,8 +35,8 @@ if (process.env.NODE_ENV === 'production') {
 // Add routes, both API and view
 app.use(routes)
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/authenticate', { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/lookcs', { useUnifiedTopology: true, useNewUrlParser: true })
 
-app.listen(process.env.PORT || 3001, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log('App is running');
 })
