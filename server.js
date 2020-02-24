@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/authenticate', { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/lookcs', { useUnifiedTopology: true, useNewUrlParser: true });
 
 const sessConfig = {
   secret: 'keyboard cat', resave: false, saveUninitialized: false,
@@ -37,6 +37,6 @@ app.use(routes)
 
 mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/lookcs', { useUnifiedTopology: true, useNewUrlParser: true })
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3001, () => {
 	console.log('App is running');
 })
