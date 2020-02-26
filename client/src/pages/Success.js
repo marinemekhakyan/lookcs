@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import Title from "../components/Title";
 import API from "../utils/API";
 
-class Secure extends Component {
+class Success extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,11 +45,11 @@ class Secure extends Component {
     }
     return (
       <Fragment>
-        <Title>This is a secure page</Title>
+        <Title>Log In Successful!</Title>
         <button id="logout" onClick={this.handleLogout} className="btn">LOG OUT</button>
       </Fragment>
     );
   }
 }
 
-export default Secure;
+export default Success;

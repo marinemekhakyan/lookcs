@@ -27,7 +27,7 @@ class Login extends Component {
     event.preventDefault();
 
     API.login(this.state.username, this.state.password)
-      .then(res => this.props.history.push('/secure'))
+      .then(res => this.props.history.push('/success'))
       .catch(err => console.error(err));
   }
 

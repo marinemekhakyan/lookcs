@@ -27,7 +27,7 @@ class Register extends Component {
     event.preventDefault();
 
     API.register(this.state.username, this.state.password)
-      .then(res => this.props.history.push('/secure'))
+      .then(res => this.props.history.push('/success'))
       .catch(err => console.error(err));
   }
 
