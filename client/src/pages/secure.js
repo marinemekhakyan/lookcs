@@ -45,7 +45,7 @@ class Secure extends Component {
     }
     return (
       <Fragment>
-        <Title>This is a secure page</Title>
+        <Title>Log In Successful!</Title>
         <button id="logout" onClick={this.handleLogout} className="btn">LOG OUT</button>
       </Fragment>
     );

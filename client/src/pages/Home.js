@@ -6,7 +6,7 @@ import "./Home.css";
 
 const Home = () => (
   <Fragment>
-    <Title>Authentication</Title>
+    <Title>Welcome to Lookcs</Title>
     <button className="btn"><Link to="/login">ENTER</Link></button>
   </Fragment>
 )
