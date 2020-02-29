@@ -11,6 +11,10 @@ const UserSchema = new Schema({
   hash: {
     type: String,
     required: true
+  },
+  dob: {
+    type: Date,
+    required: true
   }
 })
 
