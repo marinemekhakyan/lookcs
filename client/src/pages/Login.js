@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import API from "../utils/API";
 import Title from "../components/Title";
-import Form from "../components/Form";
+import LoginForm from "../components/LoginForm";
 import "./Login.css";
 
 class Login extends Component {
@@ -35,7 +35,7 @@ class Login extends Component {
     return (
       <Fragment>
         <Title>Login</Title>
-        <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
+        <LoginForm inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
         <Link to="/register" className="link-to-register">First time? Register here</Link>
       </Fragment>
     );

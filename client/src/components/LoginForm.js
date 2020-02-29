@@ -13,11 +13,6 @@ const Form = ({ inputHandler, submitHandler }) => (
       <span className="input-underline"></span>
       <label htmlFor="password" className="input-label">Password</label>
     </div>
-    <div className="input-container">
-      <input id="dob" type="date" name="dob" onChange={inputHandler} required />
-      <span className="input-underline"></span>
-      <label htmlFor="dob" className="input-label" id='dob'>Date of Birth</label>
-    </div>
     <button className="btn">SUBMIT</button>
   </form>
 );

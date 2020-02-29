@@ -11,7 +11,8 @@ class Register extends Component {
 
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      dob: Date
     }
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -26,7 +27,7 @@ class Register extends Component {
   handleSubmit (event) {
     event.preventDefault();
 
-    API.register(this.state.username, this.state.password)
+    API.register(this.state.username, this.state.password, this.state.dob)
       .then(res => this.props.history.push('/success'))
       .catch(err => console.error(err));
   }

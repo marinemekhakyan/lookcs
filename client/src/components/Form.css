@@ -86,3 +86,7 @@ input:valid ~ .input-label {
 	box-shadow: 5px 5px #888888;
 	transition: 0.2s;
 }
+
+#dob {
+	top: 0px;	
+}
