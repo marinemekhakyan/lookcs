@@ -35,7 +35,7 @@ class Register extends Component {
   render () {
     return (
       <Fragment>
-        <Title>Register</Title>
+        <Title>REGISTER</Title>
         <Form inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
         <Link to="/login" className="link-to-register">Already have an account? Login here</Link>
       </Fragment>

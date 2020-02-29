@@ -34,7 +34,7 @@ class Login extends Component {
   render () {
     return (
       <Fragment>
-        <Title>Login</Title>
+        <Title>LOGIN</Title>
         <LoginForm inputHandler={this.handleInputChange} submitHandler={this.handleSubmit} />
         <Link to="/register" className="link-to-register">First time? Register here</Link>
       </Fragment>
